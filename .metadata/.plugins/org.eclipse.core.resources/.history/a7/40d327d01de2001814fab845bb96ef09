@@ -1,0 +1,96 @@
+import java.util.HashMap;
+import java.util.List;
+
+/**
+ * An implementation of <tt>Cache</tt> that uses a least-recently-used (LRU)
+ * eviction policy.
+ */
+public class LRUCache<T, U> implements Cache<T, U> {
+
+// Sub-Class
+	class Node {
+	// Data
+		T _key; 
+		U _value;
+		Node _next;
+		Node _previous;
+		
+	// Constructor 
+		/**
+		 * @param key
+		 * @param value
+		 * @param next
+		 * @param previous
+		 */
+		public Node(T key, U value, Node next, Node previous) {
+			_key = key;
+			_value = value; 
+			_next = next; 
+			_previous = previous;
+		}
+	}
+	
+// Data
+	private DataProvider<T, U> _provider; 
+	private int _capacity, _numOfMisses, _numOfElements; 
+	private HashMap<T, Node> _map;
+	private Node _firstNode, _lastNode;
+	
+// Constructor(s)
+	
+	/**
+	 * @param provider the data provider to consult for a cache miss
+	 * @param capacity the exact number of (key,value) pairs to store in the cache
+	 */
+	public LRUCache (DataProvider<T, U> provider, int capacity) {
+		_provider = provider;
+		_capacity = capacity;
+	}
+	
+// Methods	
+	
+	private U getFromProvider(DataProvider<T, U> provider, T key) {
+		return (U) provider.get(key);
+	}
+	
+	/**
+	 * Returns the value associated with the specified key.
+	 * @param key the key
+	 * @return the value associated with the key
+	 */
+	public U get (T key) 
+	{
+		U value;
+		if (_map.get(key) == null) 
+		{
+			value = (U) getFromProvider(_provider, key);
+			Node newNode = new Node(key, value, null, null);
+			if (_numOfElements == 0) 
+			{
+				_numOfElements+=1;
+				_firstNode = newNode;
+				_lastNode = newNode; 
+				_map.put(key, newNode);
+			}
+			else if(_numOfElements<_capacity)
+			{
+				_lastNode._next = newNode;
+				newNode._previous = _lastNode;
+			}
+		
+			
+			
+			
+			return value;
+		}
+		return null;  
+	}
+
+	/**
+	 * Returns the number of cache misses since the object's instantiation.
+	 * @return the number of cache misses since the object's instantiation.
+	 */
+	public int getNumMisses () {
+		return 0;
+	}
+}

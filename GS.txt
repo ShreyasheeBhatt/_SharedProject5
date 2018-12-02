@@ -1,0 +1,135 @@
+
+// Shreyashee Bhattacharjee
+// sbhattacharjee2@wpi.edu
+
+
+// Problem Digestion
+
+Model graphs 
+Search engine to find shortest paths between any pair of nodes in a graph
+
+Allows users to find shortest path of actor-to-movie nodes that connect any two specified actors (if any such path exists)
+
+Load data and find paths
+
+
+
+/* Parsing */
+Use:
+  Scanner
+	hasNextLine
+	findInLine
+	nextLine
+  String methods
+	indexOf
+	substring
+	lastIndexOf
+  final Scanner sc = new Scanner(new File(actorsFileName), “ISO-8859-1”);
+
+Parse only the title and year of each movie
+Keep in mind, actors and actresses are in two separate lists —> make into one list and sort alphabetically?
+
+List m: Ab ac ae ba bh ca ce
+
+List f: Aa ab ad be bi cb ci
+
+for(int n=0; n<f.length; n++) { 
+	name = f[n];
+	firstLetter = name[0];
+	secondLetter = 
+	for(int x=0; x<m.length;m++) {
+		
+	}
+}
+
+
+String result = Arrays.stream(myArray)
+                .reduce("", (a,b) -> a + b);
+
+Exclude TV shows/movies! —> will either be [title] (year) (TV) or “title” (year) {blah}
+Exclude actors/actresses who starred in ONLY TV series 
+
+R1: Create a class called IMDBGraphImpl that implements the Graph interface:
+The class should load data from the two files whose filenames are specified in the constructor. Your parsing code should exclude TV series, TV movies, and any actresses/actors who starred only in TV series/movies.
+The class should have a public constructor, which can throw an IOException, that take two parameters specifying the absolute paths of the actors and actresses data files, in that order.
+
+The class should construct a graph based on the data parsed from these files.
+To make sure that everyone is parsing the same data files, you must use the IMDB data contained in the Zip file at the following link: IMDB.zip.
+R2: Implement BFS within a class GraphSearchEngineImpl that implements GraphSearchEngine. Your search engine should be able to find shortest paths between any pair of Node objects (or return null if no such path exists) -- whether they are IMDB nodes, CiteSeer (scientific publication) nodes, or anything else.
+
+
+
+// Problem Processing
+
+/* 
+ if there’s a new line, then the next thing is gonna be an actor node
+ if I just made an actor node, the next node is gonna be a movie node —> the movie node will include the movie name + the date —> add the actor node to the movie’s “friend”s too
+ skip to the next line and add the next movie iff the movie isn’t from TV
+ if an actor’s movieNode list is empty, then remove the actor from the list
+*/ 
+
+
+
+
+Actor	movie1 date rest
+	movie date rest
+	movie date rest
+	movie date rest
+
+Actor	movie date rest
+	movie date rest
+	movie date rest
+	movie date rest
+
+Actor	movie date rest
+	movie1 date rest
+	movie date rest
+	movie date rest
+
+
+ActorNode -> (actorName, Collection<MovieNode>)
+MovieNode —> (movieTitle [name+year], Collection<ActorNode>); 
+
+_actors; 
+_movies; 
+
+if(.next() = \n) {
+	String x = nextLine(); 
+	actorNode = (.next(), null); 
+	while (.next() != \n) {
+		MovieNode movieNode; 
+		movieName = .next();
+		movieName = movieName+.next();  
+		if(movieNode.getName() != movieName OR movieName.getFirstChar != “ \” “) {	
+			if(_movies.contains(movieNode.getName())) 
+				movieNode = _movies.get(movieNode); 
+				movieNode.addActor(actorNode); 
+			else 
+				movieNode = new MovieNode(movieName, actor); 
+				
+			if (.next() != “(TV)”)
+				actorNode.addMovie(movieNode); 
+			x = nextLine(); 
+		}
+	}
+}
+
+
+- 
+
+
+
+
+
+
+Actor1 Actor2 Actor3
+| | | | | | | | |  |  (Movies)
+Movie1 Movie2 Movie3
+
+
+	
+c+a; 
+a.morph; 
+
+
+

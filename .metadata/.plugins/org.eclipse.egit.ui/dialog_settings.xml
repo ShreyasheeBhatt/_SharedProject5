@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="2" key="org.eclipse.egit.ui.internal.clone.GitSelectWizardPageWizardSel"/>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/praneetmek/Project2.git"/>
+		<item value="https://github.com/praneetmek/FacebukProject.git"/>
+		<item value="git@github.com:praneetmek/FacebukProject.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Shreyashee Bhattacharjee &lt;shreyasheeb@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Shreyashee Bhattacharjee &lt;shreyasheeb@gmail.com&gt;"/>
+	</list>
+	<section name="GitImportWizard">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="650" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="440" key="DIALOG_HEIGHT"/>
+		<item value="315" key="DIALOG_X_ORIGIN"/>
+		<item value="107" key="DIALOG_Y_ORIGIN"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item value="418" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="389" key="DIALOG_HEIGHT"/>
+		<item value="489" key="DIALOG_X_ORIGIN"/>
+		<item value="274" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+	</section>
+	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
+		<item value="600" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="440" key="DIALOG_HEIGHT"/>
+		<item value="340" key="DIALOG_X_ORIGIN"/>
+		<item value="107" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+	<section name="CommitSelectionDialogSection">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History/&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="340" key="DIALOG_X_ORIGIN"/>
+			<item value="27" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

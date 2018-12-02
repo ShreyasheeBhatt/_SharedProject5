@@ -1,0 +1,15 @@
+
+public class ClassExercises {
+	
+	
+	
+	private int findMax(int[] numbers) {
+		int i=0; 
+		for(int n = 0; n<numbers.length; n++) {
+			if(n>i)
+				i=n;
+		}
+		return i;
+	}
+	
+}

@@ -1,0 +1,41 @@
+import static org.junit.Assert.*;
+
+import java.util.HashMap;
+
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * Code to test an <tt>LRUCache</tt> implementation.
+ */
+public class CacheTest {
+	private DataProvider<Integer, String> _provider = new Provider();
+	
+	class Provider implements DataProvider {
+		private HashMap<Integer, String> _hashMap; 
+		
+		private Provider {
+			_hashMap.put(1,"One");
+			_hashMap.put(2,"Two");
+			_hashMap.put(3,"Three");
+		}
+		@Override
+		public Object get(Object key) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+	}
+	
+	
+	@Before
+	
+	
+	
+	@Test
+	public void leastRecentlyUsedIsCorrect () 
+	{
+		DataProvider<Integer,String> provider = null; // Need to instantiate an actual DataProvider
+		Cache<Integer,String> cache = new LRUCache<Integer,String>(provider, 5);
+	}
+}

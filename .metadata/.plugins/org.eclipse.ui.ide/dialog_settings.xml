@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="/Users/Shreya/Desktop/Project2"/>
+		<item value="/Users/Shreya/Downloads/bhattacharjee_mekala_project1"/>
+		<item value="/Users/Shreya/Downloads/FacebukProject"/>
+		<item value="/Users/Shreya/Documents/MAMS JY/CS/eclipse-workspace/Project1"/>
+		<item value="/Users/Shreya/Documents/MAMS_SY/Comp_Science/CS_2103/Project1"/>
+	</list>
+	<section name="ExternalProjectImportWizard">
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+		</list>
+	</section>
+</section>
