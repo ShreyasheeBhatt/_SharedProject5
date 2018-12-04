@@ -6,5 +6,5 @@ interface ExpressionParser {
 	 * @param withJavaFXControls whether to create JavaFX GUI objects for the expression tree
 	 * @return the Expression object representing the parsed expression tree
 	 */
-	Expression parse (String str, boolean withJavaFXControls) throws ExpressionParseException;
+	Expression parse(String str, boolean withJavaFXControls) throws ExpressionParseException;
 }

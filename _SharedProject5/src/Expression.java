@@ -1,9 +1,10 @@
 interface Expression {
+
 	/**
 	 * Returns the expression's parent.
 	 * @return the expression's parent
 	 */
-	CompoundExpression getParent ();
+	CompoundExpression getParent();
 
 	/**
 	 * Sets the parent be the specified expression.
@@ -17,7 +18,7 @@ interface Expression {
 	 * the copied Expression is as deep as possible.
 	 * @return the deep copy
 	 */
-	Expression deepCopy ();
+	Expression deepCopy();
 
 	/**
 	 * Recursively flattens the expression as much as possible
@@ -26,7 +27,7 @@ interface Expression {
 	 * child c is of the same type as x, the children of c will be added to x, and
 	 * c itself will be removed. This method modifies the expression itself.
 	 */
-	void flatten ();
+	void flatten();
 
 	/**
 	 * Creates a String representation by recursively printing out (using indentation) the
@@ -34,9 +35,9 @@ interface Expression {
 	 * @param stringBuilder the StringBuilder to use for building the String representation
 	 * @param indentLevel the indentation level (number of tabs from the left margin) at which to start
 	 */	
-	void convertToString (StringBuilder stringBuilder, int indentLevel);
+	void convertToString(StringBuilder stringBuilder, int indentLevel);
 
-	public default String convertToString (int indentLevel) {
+	public default String convertToString(int indentLevel) {
 		final StringBuilder stringBuilder = new StringBuilder();
 		convertToString(stringBuilder, indentLevel);
 		return stringBuilder.toString();
@@ -45,10 +46,10 @@ interface Expression {
 	/**
 	 * Static helper method to indent a specified number of times from the left margin, by
 	 * appending tab characters to the specified StringBuilder.
-	 * @param sb the StringBuilder to which to append tab characters.
+	 * @param stringBuilder the StringBuilder to which to append tab characters.
 	 * @param indentLevel the number of tabs to append.
 	 */
-	public static void indent (StringBuilder stringBuilder, int indentLevel) {
+	public static void indent(StringBuilder stringBuilder, int indentLevel) {
 		for (int i = 0; i < indentLevel; i++) {
 			stringBuilder.append('\t');
 		}
